@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    app:cardElevation="10dp"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvComplainType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:text="Complain Type"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            android:layout_below="@+id/tvComplainType"
+            android:text="User"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUser"
+            android:weightSum="2"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:text="Time"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l1"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:text="Status:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/tvStatus"
+            android:layout_below="@+id/l1"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/circle1"
+            android:background="@drawable/circle"/>
+
+        <RelativeLayout
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/circle1"
+            android:layout_below="@+id/l1"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/circle2"
+            android:background="@drawable/circle"/>
+
+        <RelativeLayout
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/circle2"
+            android:layout_below="@+id/l1"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/circle3"
+            android:background="@drawable/circle"/>
+
+        <View
+            android:id="@+id/v"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tvStatus"
+            android:layout_marginRight="5dp"
+            android:background="#DCD9D9" />
+
+        <TextView
+            android:id="@+id/tvOrderType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:text="Complain Details"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgDetails"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/v"
+            android:src="@drawable/ic_arrow_forward"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imgDetails"
+            android:layout_marginRight="5dp"
+            android:background="#DCD9D9" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

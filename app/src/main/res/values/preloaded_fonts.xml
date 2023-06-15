@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/arima_madurai_thin</item>
+        <item>@font/atomic_age</item>
+        <item>@font/el_messiri_bold</item>
+        <item>@font/poppins_semibold</item>
+    </array>
+</resources>

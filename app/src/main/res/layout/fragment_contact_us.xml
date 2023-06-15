@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_stre_app"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="CONTACT US"
+        android:layout_marginTop="230dp"
+        android:textColor="@color/black"
+        android:textSize="38dp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bac"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/text222"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@drawable/phone"
+            android:text=" + 968 24943122"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@drawable/email"
+            android:text=" Portal@omaninfo.om"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@drawable/location"
+            android:text=" JC2F+96R، Oman, Muscat"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/imgFb"
+            android:layout_width="70dp"
+            android:layout_height="59dp"
+            android:layout_marginLeft="50dp"
+            app:srcCompat="@drawable/m1" />
+
+        <ImageView
+            android:id="@+id/imgInsta"
+            android:layout_width="70dp"
+            android:layout_height="59dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/m4" />
+
+        <ImageView
+            android:id="@+id/imgTwt"
+            android:layout_width="70dp"
+            android:layout_height="59dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/m5" />
+
+        <ImageView
+            android:id="@+id/imgYT"
+            android:layout_width="70dp"
+            android:layout_height="59dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/m6" />
+    </LinearLayout>
+
+</LinearLayout>

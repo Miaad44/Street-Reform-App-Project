@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bac">
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_close"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/CancelIcone"/>
+
+    <TextView
+        android:id="@+id/tvComplain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CancelIcone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/atomic_age"
+        android:gravity="center_horizontal"
+        android:text="Complain: "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/UsernameTV"
+        android:layout_below="@+id/tvComplain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="User: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/v"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/UsernameTV"
+        android:layout_marginRight="10dp"
+        android:background="#DCD9D9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please add pictures of problem."
+        android:textSize="16sp"
+        android:id="@+id/tvPictures"
+        android:layout_below="@+id/v"
+        android:textColor="#696767"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_below="@+id/tvPictures"
+        android:id="@+id/hori">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView2"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_marginLeft="20dp" />
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_toRightOf="@+id/recyclerView2"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/img_back"
+                android:id="@+id/layoutSelectPhoto">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Add photos"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hori"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Provide complain details."
+                android:textSize="16sp"
+                android:id="@+id/tvDetails"
+                android:layout_below="@+id/v1"
+                android:textColor="#696767"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDetails"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:hint="Description"
+                android:textColorHint="@color/black"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#fff"
+                    android:paddingLeft="0dp"
+                    android:textColor="#000" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="15dp"
+                android:hint="Severity"
+                android:textColorHint="@color/black"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtSeverity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#fff"
+                    android:paddingLeft="0dp"
+                    android:textColor="#000" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/layout"
+                android:layout_below="@id/quantity">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/LocationIcone"
+                    android:text="Get current location"
+                    android:id="@+id/LocaTV"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="10dp" />
+
+                <ImageView
+                    android:id="@+id/LocationIcone"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_arrow_forward"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+            <View
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/layout"
+                android:layout_marginTop="15sp"
+                android:layout_marginRight="10dp"
+                android:background="#DCD9D9" />
+
+
+            <Button
+                android:id="@+id/btnSubmitt"
+                android:layout_width="374dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/v2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30sp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit"
+                android:backgroundTint="#8aa7ab"
+                android:text="Submit"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "148255675640",
+    "firebase_url": "https://street-project-48276-default-rtdb.firebaseio.com",
+    "project_id": "street-project-48276",
+    "storage_bucket": "street-project-48276.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148255675640:android:445bc109d2c236f591570d",
+        "android_client_info": {
+          "package_name": "com.app.street_reform"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148255675640-0en6f1gl6g35nhqu6244c9phqopeho8i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZA0Iyrlb2JKccCccvtzvBFRSEQNgVnvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148255675640-0en6f1gl6g35nhqu6244c9phqopeho8i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
